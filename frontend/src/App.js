@@ -6,7 +6,7 @@ function App() {
   const [email, setEmail] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/users/')
+    fetch('http://3.93.178.115:8000/api/users/')
       .then(res => res.json())
       .then(data => setUsers(data));
   }, []);
