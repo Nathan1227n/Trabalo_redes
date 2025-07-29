@@ -13,7 +13,7 @@ function App() {
 
   const addUser = () => {
     if (!name || !email) return alert('Preencha nome e email');
-    fetch('http://localhost:8000/api/users/', {
+    fetch('http://3.93.178.115:8000/api/users/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email }),
